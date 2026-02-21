@@ -1,0 +1,5 @@
+Test document for AI Employee processing.
+
+This is a test file to verify the file system watcher is working correctly.
+
+Please process this document and create an action plan.

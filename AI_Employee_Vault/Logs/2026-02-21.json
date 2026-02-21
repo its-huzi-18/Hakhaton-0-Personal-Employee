@@ -1,0 +1,103 @@
+[
+  {
+    "timestamp": "2026-02-21T11:15:57.187294Z",
+    "watcher": "FileSystemWatcher",
+    "action_type": "file_detected",
+    "description": "New file: test_document.txt",
+    "status": "completed",
+    "details": {
+      "size": 176,
+      "type": ".txt"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T16:20:55.406286",
+    "action_type": "email_sent",
+    "source_file": "EMAIL_1771672758925_test.md",
+    "email_data": {
+      "recipients": [
+        "test@example.com"
+      ],
+      "subject": "Test Email"
+    },
+    "result": {
+      "status": "sent",
+      "recipients": [
+        "test@example.com"
+      ],
+      "subject": "Test Email",
+      "timestamp": "2026-02-21T16:20:55.406286"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T16:25:00Z",
+    "action_type": "inbox_processing_started",
+    "description": "AI Employee reviewed all tasks in Needs_Action folder",
+    "status": "completed",
+    "details": {
+      "tasks_found": 4,
+      "tasks_processed": 4,
+      "plans_created": 3,
+      "approvals_required": 1
+    }
+  },
+  {
+    "timestamp": "2026-02-21T16:26:00Z",
+    "action_type": "task_completed",
+    "source_file": "TEST_001.md",
+    "description": "Test task processed and completed",
+    "status": "completed",
+    "details": {
+      "task_type": "test",
+      "priority": "medium",
+      "auto_approved": true,
+      "plan_file": "PLAN_TEST_001.md"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T16:26:30Z",
+    "action_type": "task_completed",
+    "source_file": "FILE_20260221_111557_test_document.txt.md",
+    "description": "File drop test document processed and completed",
+    "status": "completed",
+    "details": {
+      "task_type": "file_drop",
+      "priority": "low",
+      "auto_approved": true,
+      "plan_file": "PLAN_FILE_test_document.md"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T16:27:00Z",
+    "action_type": "approval_created",
+    "source_file": "EMAIL_test_client_invoice.md",
+    "description": "Email approval request created for client invoice",
+    "status": "pending_approval",
+    "details": {
+      "task_type": "email",
+      "priority": "high",
+      "recipient": "john.client@example.com",
+      "subject": "Invoice for January Services - $1,500",
+      "approval_file": "EMAIL_SEND_john_client_invoice.md",
+      "plan_file": "PLAN_EMAIL_test_client_invoice.md"
+    }
+  },
+  {
+    "timestamp": "2026-02-21T16:27:30Z",
+    "action_type": "company_handbook_applied",
+    "description": "Company Handbook rules applied to all task processing",
+    "status": "completed",
+    "details": {
+      "version": "1.0",
+      "rules_applied": [
+        "Section 1: Autonomy Thresholds",
+        "Section 2: Communication Guidelines",
+        "Section 3: Financial Rules",
+        "Section 4: Task Processing Workflow",
+        "Section 9: Security Boundaries"
+      ],
+      "approvals_enforced": 1,
+      "auto_approvals": 2
+    }
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "email": {
+      "command": "node",
+      "args": ["mcp_servers/email_mcp.js"],
+      "cwd": "D:\\Vs Code-All-Things\\Github Repo\\Hakhaton-0-Personal-Employee",
+      "env": {
+        "VAULT_PATH": "D:\\Vs Code-All-Things\\Github Repo\\Hakhaton-0-Personal-Employee\\AI_Employee_Vault",
+        "DRY_RUN": "true",
+        "PORT": "3001"
+      }
+    },
+    "odoo": {
+      "command": "node",
+      "args": ["mcp_servers/odoo_mcp.js"],
+      "cwd": "D:\\Vs Code-All-Things\\Github Repo\\Hakhaton-0-Personal-Employee",
+      "env": {
+        "ODOO_HOST": "localhost",
+        "ODOO_PORT": "8069",
+        "ODOO_DB": "odoo_db",
+        "ODOO_USERNAME": "admin",
+        "ODOO_PASSWORD": "admin",
+        "ODOO_DRY_RUN": "true"
+      }
+    }
+  }
+}
